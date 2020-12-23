@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application météo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="content">
+        <main id="pageContent">
+            <div class="search-box">
+                <input type="text" class="search-bar" placeholder="search..." name="city" id="inputCityWeather"><i id="searchWeather" onclick="loadWeather()"></i></input>
+
+            </div>
+            <div class="weather-wrap">
+                <div class="weather-box" id="weatherContent">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

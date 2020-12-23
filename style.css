@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+}
+
+.warm {
+  background-image: url("./warm-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.cold {
+  background-image: url("./cold-bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px;
+}
+
+.content {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.75)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
+}
+
+.search-box {
+  width: 100%;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #313131;
+  font-size: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 16px 0px 16px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.search-box .search-bar:focus {
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 16px 0px 16px 0px;
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  display: inline-block;
+  padding: 10px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  margin: 30px 0px;
+  -webkit-box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.weather-box .temp_min_max {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.weather-box .weather-description {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: italic;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.weather-box .weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+
+.weather-box .pressure-humidity {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.weather-box .wind {
+  color: #FFF;
+  font-size: 30px;
+  font-weight: 200;
+  font-style: italic;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.weather-forecast {
+  display: inline-block;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.weather-forecast .weather-d {
+  text-align: center;
+  display: inline-block;
+  justify-items: center;
+  padding: 4px;
+  margin-top: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #FFF;
+  font-size: 25px;
+  font-weight: 600;
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+}
+/*# sourceMappingURL=style.css.map */
